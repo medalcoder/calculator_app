@@ -16,6 +16,8 @@
 <div id="calculator">
     
     <input type="text" id="display" readonly>
+    
+    <input type="button" value="C" onclick="clearDisplay()">
 
     <input type="button" value="7" onclick="appendToDisplay('7')">
     <input type="button" value="8" onclick="appendToDisplay('8')">
@@ -34,7 +36,7 @@
 
     <input type="button" value="0" onclick="appendToDisplay('0')">
     <input type="button" value="." onclick="appendToDisplay('.')">
-    <input type="button" value="C" onclick="clearDisplay()">
+    <input type="button" value="*" class="operator" onclick="appendToDisplay('*')">
     <input type="button" value="=" class="equal" onclick="calculate()">
 
 </div>
